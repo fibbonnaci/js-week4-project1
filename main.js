@@ -18,41 +18,83 @@ techniques may conflict with each other.
 
 
 // 1. Make sure that the HTML document is fully loaded before running any jQuery code that is needed below. Make sure you don't comment out this code as you'll wrap this code around all the following methods (so don't forget the closing tags, too. 
-
+$(document).ready(function(){
+  
+});
     
    
     
 // 2. Hide all of the paragraphs on the index.html page.
 
-
+$(document).ready(function(){
+  $("p").hide();
+  
+});
     
     
     
 // 3. Hide all of the h2's on the page.
-
+$(document).ready(function(){
+  // $("p").hide();
+  $("h2").hide();
+  
+});
 
     
 
 
 // 4. Hide all images on the page.
   
-	
+$(document).ready(function(){
+  // $("p").hide();
+  // $("h2").hide();
+  $("img").hide();
+  
+});	
 	
 	
 	
 // 5. Hide all links on the page.
 
+$(document).ready(function(){
+  // $("p").hide();
+  // $("h2").hide();
+  // $("img").hide();
+  $("a").hide();
+  
+});
     
 	
 	
 	
 // 6. Hide all of the elements in the document.
 
-    
+   $(document).ready(function(){
+  // $("p").hide(2000);
+  // $("h2").hide();
+  // $("img").hide();
+  // $("a").hide();
+  $("main").hide(3000);
+
+
+});
+ 
     
  
  
 // 7. Hide all paragraphs when one of them is clicked.
+$(document).ready(function(){
+  // $("p").hide(2000);
+  // $("h2").hide();
+  // $("img").hide();
+  // $("a").hide();
+  // $("main").hide(3000);
+  $("p").click(function(){
+    $("p").hide(3000);
+  })
+
+
+});
 
 
 
@@ -60,11 +102,44 @@ techniques may conflict with each other.
     
 // 8. Hide all images when one of them is clicked.
 
+$(document).ready(function(){
+  // $("p").hide(2000);
+  // $("h2").hide();
+  // $("img").hide();
+  // $("a").hide();
+  // $("main").hide(3000);
+  // $("p").click(function(){
+  //   $("p").hide(3000);
+  // });
+  $("img").click(function(){
+    $(this).hide(2000);
+  });
+  
+
+
+});
 
 
 
 
 // 9. When the user clicks onto the image, toggle the paragraphs between hide and show.  
+
+$(document).ready(function(){
+  // $("p").hide(2000);
+  // $("h2").hide();
+  // $("img").hide();
+  // $("a").hide();
+  // $("main").hide(3000);
+  // $("p").click(function(){
+  //   $("p").hide(3000);
+  // });
+  $("img").click(function(){
+    $(this).hide(2000);
+  });
+  
+
+
+});
 
  
  
